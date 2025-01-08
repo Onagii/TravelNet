@@ -1,0 +1,15 @@
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\bin\Debug\net8.0\TravelNet.exe
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\bin\Debug\net8.0\TravelNet.deps.json
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\bin\Debug\net8.0\TravelNet.runtimeconfig.json
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\bin\Debug\net8.0\TravelNet.dll
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\bin\Debug\net8.0\TravelNet.pdb
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.AssemblyInfoInputs.cache
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.AssemblyInfo.cs
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.csproj.CoreCompileInputs.cache
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.sourcelink.json
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.dll
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\refint\TravelNet.dll
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.pdb
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\TravelNet.genruntimeconfig.cache
+C:\Users\jerem\Documents\C#\TravelNet\TravelNet\obj\Debug\net8.0\ref\TravelNet.dll
