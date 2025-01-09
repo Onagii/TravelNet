@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace TravelNet;
+namespace TravelNet.Vakanties;
 public class VliegtuigVakantie : Vakantie
 {
     public List<Route> Route { get; set; } = new List<Route>();

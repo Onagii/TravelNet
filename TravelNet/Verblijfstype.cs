@@ -1,4 +1,4 @@
-﻿namespace TravelNet;
+﻿namespace TravelNet.Verblijven;
 public abstract class Verblijfstype
 {
     public string NaamVerblijf { get; set; }

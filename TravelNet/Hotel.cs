@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TravelNet;
+namespace TravelNet.Verblijven;
 public class Hotel : Verblijfstype
 {
     public bool Internet {  get; set; }

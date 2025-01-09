@@ -5,7 +5,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TravelNet;
+namespace TravelNet.Verblijven;
 public class Appartement : Verblijfstype
 {
     public decimal SchoonmaakPrijsPerDag {  get; set; }

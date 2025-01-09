@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TravelNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+585e31235790f83a785034f9b49bf57dd488b905")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e10928f86886e689aee8c747a575d324044a5c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TravelNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TravelNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

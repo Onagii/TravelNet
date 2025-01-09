@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TravelNet.Verblijven;
 
-namespace TravelNet;
+namespace TravelNet.Vakanties;
 public abstract class Vakantie
 {
     public int BoekingsNr { get; set; }

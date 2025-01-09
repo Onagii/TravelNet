@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TravelNet;
+namespace TravelNet.Vakanties;
 public class Cruise : Vakantie
 {
     public string Vertekpunt {  get; set; }

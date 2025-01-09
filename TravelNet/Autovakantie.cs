@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TravelNet;
+namespace TravelNet.Vakanties;
 public class Autovakantie : Vakantie
 {
     public List<Route> Routes { get; set; } = new List<Route>();

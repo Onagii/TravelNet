@@ -1,4 +1,6 @@
 ﻿using TravelNet;
+using TravelNet.Verblijven;
+using TravelNet.Vakanties;
 try
 {
     Hotel albergoNero = new("Albergo Nero", 120m, true, true, 0m);
