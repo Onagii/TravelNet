@@ -81,16 +81,57 @@ try
         AantalPersonen = 7
     };
 
-    Autovakantie autovakantie1 = new(2, Bestemming.Italie, new DateOnly(2022, 5, 14), new DateOnly(2022, 5, 19), new List<IActiviteit> { stadsbezoekRome, volwassenenCinema, volwassenenCinema, kinderCinema }, 
-        new List<Route> { routeLucca, routePrato, routeBologna, routeArezzo, routeLivorno }, 500m, WagenType.Camper);
+    List<Vakantie> autoVakanties = new List<Vakantie>()
+    {
+        new Autovakantie(2, Bestemming.Italie, new DateOnly(2022, 5, 14), new DateOnly(2022, 5, 19), new List<IActiviteit> { stadsbezoekRome, volwassenenCinema, volwassenenCinema, kinderCinema },
+                            new List<Route> { routeLucca, routePrato, routeBologna, routeArezzo, routeLivorno }, 500m, WagenType.Camper),
 
-    VliegtuigVakantie vliegVakantie1 = new(3, Bestemming.Griekenland, new DateOnly(2022, 9, 1), new DateOnly(2022, 9, 15), new List<IActiviteit> { stadsbezoekAthene, volwassenenFiets, volwassenenFiets, kinderfiets, kinderfiets },
-        new List<Route> { routeAthene }, 800m);
+        new Autovakantie(3, Bestemming.Noorwegen, new DateOnly(2022, 8, 8), new DateOnly (2022, 8, 14), new List<IActiviteit>{stadsbezoekOslo, volwassenenFiets, kinderfiets, kinderfiets}, 
+                            new List<Route> {routeStavanger, routeEgersund, routeKragera, routePorsGrunn, routeDrammen, routeOslo}, 600m, WagenType.Camper),
+    };
 
-    Cruise cruise1 = new(1, Bestemming.Finland, new DateOnly()
+    List<Vakantie> vliegVakanties = new List<Vakantie>()
+    {
+        new VliegtuigVakantie(3, Bestemming.Griekenland, new DateOnly(2022, 9, 1), new DateOnly(2022, 9, 15), new List<IActiviteit> { stadsbezoekAthene, volwassenenFiets, volwassenenFiets, kinderfiets, kinderfiets },
+                            new List<Route> { routeAthene }, 800m)
+    };
 
-    Console.WriteLine(autovakantie1.GegevensVakantie());
-    Console.WriteLine(vliegVakantie1.GegevensVakantie());
+    List<Vakantie> cruiseVakanties = new List<Vakantie>()
+    {
+        new Cruise(1, Bestemming.Finland, new DateOnly(2022, 8, 12), new DateOnly(2022, 8, 20), null, "Helsinki", "Helsinki", new List<string>{"Turku", "Rauma", "Vaasa", "Oulu"}, 6800m),
+
+    };
+
+    Console.WriteLine("Autovakanties");
+    Console.WriteLine("=============================================================");
+    foreach (var vakantie in autoVakanties)
+    {
+        Console.WriteLine(vakantie.GegevensVakantie());
+        Console.WriteLine("------------------------------------------------------------");
+        Console.WriteLine();
+    }
+
+    Console.WriteLine("Vliegvakanties");
+    Console.WriteLine("=============================================================");
+    foreach (var vakantie in vliegVakanties)
+    {
+        Console.WriteLine(vakantie.GegevensVakantie());
+        Console.WriteLine("------------------------------------------------------------");
+        Console.WriteLine();
+    }
+
+    Console.WriteLine("Cruises");
+    Console.WriteLine("=============================================================");
+    foreach (var vakantie in cruiseVakanties)
+    {
+        Console.WriteLine(vakantie.GegevensVakantie());
+        Console.WriteLine("------------------------------------------------------------");
+        Console.WriteLine();
+    }
+
+
+
+
 
 }
 catch (VerblijfsformuleException ex)

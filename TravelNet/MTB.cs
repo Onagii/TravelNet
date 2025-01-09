@@ -23,6 +23,6 @@ public class MTB : IActiviteit
 
     public override string ToString()
     {
-        return $"Mountainbike - {Naam} - ({BerekenPrijs():F2} euro)";
+        return $"Mountainbike - {Naam}";
     }
 }

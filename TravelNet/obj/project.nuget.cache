@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YzE5EEfcCBc=",
+  "dgSpecHash": "U+H6iGNiEqU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jerem\\Documents\\TravelNet\\TravelNet\\TravelNet.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Cursist\\Documents\\TravelNet\\TravelNet\\TravelNet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cursist\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.100\\microsoft.net.sdk.compilers.toolset.9.0.100.nupkg.sha512"
+  ],
   "logs": []
 }

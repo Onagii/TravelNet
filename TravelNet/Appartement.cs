@@ -23,9 +23,6 @@ public class Appartement : Verblijfstype
         decimal prijs = base.BerekenPrijsPerDag();
         prijs += SchoonmaakPrijsPerDag;
 
-        decimal formuleKosten  = BeschikbareVerblijfsFormules.Sum(f => (decimal)f);
-        prijs += formuleKosten;
-
         return prijs;
     }
 

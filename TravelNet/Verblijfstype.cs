@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TravelNet;
+﻿namespace TravelNet;
 public abstract class Verblijfstype
 {
-    public string NaamVerblijf {  get; set; }
+    public string NaamVerblijf { get; set; }
     public decimal BasisPrijsPerDag { get; set; }
     public bool ToeslagSingle { get; set; }
     public List<Formule> BeschikbareVerblijfsFormules { get; set; }
@@ -25,11 +19,6 @@ public abstract class Verblijfstype
         if (ToeslagSingle)
         {
             prijs += 5m;
-        }
-
-        foreach (Formule formule in BeschikbareVerblijfsFormules)
-        {
-            prijs += (decimal)formule;
         }
 
         return prijs;

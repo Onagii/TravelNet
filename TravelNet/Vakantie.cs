@@ -13,7 +13,7 @@ public abstract class Vakantie
     public DateOnly TerugkeerDatum { get; set; }
     public List<IActiviteit> Activiteiten {  get; set; } = new List<IActiviteit>();
 
-    public Vakantie(int boekingsNr, Bestemming bestemming, DateOnly vertrekDatum, DateOnly terugkeerDatum, List<IActiviteit> activiteiten)
+    public Vakantie(int boekingsNr, Bestemming bestemming, DateOnly vertrekDatum, DateOnly terugkeerDatum, List<IActiviteit>? activiteiten = null)
     {
         this.BoekingsNr = boekingsNr;
         this.Bestemming = bestemming;
@@ -32,24 +32,17 @@ public abstract class Vakantie
 
     public string GegevensActiviteiten()
     {
-        decimal totaalActiviteitenPrijs = 0;
-        StringBuilder activiteitenDetails = new StringBuilder();
 
-        foreach(var activiteit in Activiteiten)
-        {
-            decimal prijs = activiteit.BerekenPrijs();
-            activiteitenDetails.AppendLine($"{activiteit}");
-            totaalActiviteitenPrijs += prijs;
-        }
+        var activiteitenDetails = Activiteiten
+            .Select(activiteit => $"{activiteit}\t({activiteit.BerekenPrijs():f2} euro)")
+            .ToList();
 
-        activiteitenDetails.AppendLine($"Totaal bedrag activiteiten: {totaalActiviteitenPrijs:f1} euro");
-
-        return activiteitenDetails.ToString();
+        return string.Join(Environment.NewLine, activiteitenDetails);
     }
 
     public virtual string GegevensVakantie()
     {
-        return $"Boekingsnr: {BoekingsNr}   Bestemming: {Bestemming}   Vertrekdatum :{VertrekDatum}    Terugkeerdatum: {TerugkeerDatum}";
+        return $"Boekingsnr: {BoekingsNr}   Bestemming: {Bestemming}   Vertrekdatum : {VertrekDatum}    Terugkeerdatum: {TerugkeerDatum}";
     }
 
 }

@@ -30,8 +30,8 @@ public class Cruise : Vakantie
     {
         string aanlegplaatsenVerbinden = string.Join(" - ", Aanlegplaatsen);
         return $"{base.GegevensVakantie()}\n" +
-               $"{aanlegplaatsenVerbinden}\n\n" +
-               $"Totale vakantieprijs {BerekenVakantiePrijs()}";
+               $"Aanlegplaatsen: {aanlegplaatsenVerbinden}\n\n" +
+               $"Totale vakantieprijs {BerekenVakantiePrijs():f1}";
 
     }
 }

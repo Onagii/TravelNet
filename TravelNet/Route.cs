@@ -18,7 +18,7 @@ public class Route
         this.Eindpunt = eindpunt;
         this.GekozenVerblijfstype = gekozenVerblijfstype;
         
-        if (GekozenVerblijfstype.BeschikbareVerblijfsFormules.Contains(GekozenFormule))
+        if (!GekozenVerblijfstype.BeschikbareVerblijfsFormules.Contains(formule))
         {
             throw new VerblijfsformuleException($"De formule {formule} is niet beschikbaar voor dit verblijfstype, kies één van de beschikbare formules.");
         }

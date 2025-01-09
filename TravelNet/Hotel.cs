@@ -37,9 +37,6 @@ public class Hotel : Verblijfstype
         decimal prijs = base.BerekenPrijsPerDag();
         prijs += WellnessPrijsPerDag;
 
-        decimal formuleKosten = BeschikbareVerblijfsFormules.Sum(f => (decimal)f);
-        prijs += formuleKosten;
-
         return prijs;
     }
 

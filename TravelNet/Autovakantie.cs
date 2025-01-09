@@ -44,32 +44,22 @@ public class Autovakantie : Vakantie
     {
         StringBuilder gegevens = new StringBuilder();
 
-        decimal totaalPrijsRoutes = 0;
-        decimal totaalActiviteitenPrijs = 0;
+        decimal totaalPrijsRoutes = Routes.Sum(route => route.BerekenVerblijfsPrijsPerDag());
+        decimal totaalActiviteitenPrijs = Activiteiten.Sum(activiteit => activiteit.BerekenPrijs());
 
         gegevens.AppendLine($"{base.GegevensVakantie()}");
         gegevens.AppendLine($"  Routes:");
 
-        foreach(var route in Routes)
-        {
-            gegevens.AppendLine(route.ToString());
-            totaalPrijsRoutes += route.BerekenVerblijfsPrijsPerDag();
-        }
+        Routes.ForEach(route => gegevens.AppendLine(route.ToString()));
 
         gegevens.AppendLine($"Totale verblijfprijs: {totaalPrijsRoutes}");
         gegevens.AppendLine($"Huurprijs: {Huurprijs}");
-
-        foreach (var activiteit in Activiteiten)
-        {
-            totaalActiviteitenPrijs += activiteit.BerekenPrijs();
-        }
         gegevens.AppendLine($"{GegevensActiviteiten()}");
-
         gegevens.AppendLine($"Totaal bedrag activiteiten: {totaalActiviteitenPrijs:f1} euro");
         gegevens.AppendLine($"\n");
         gegevens.AppendLine($"Totale vakantieprijs: {BerekenVakantiePrijs()}");
 
         return gegevens.ToString();
-        
+
     }
 }

@@ -22,6 +22,6 @@ public class Cinema : IActiviteit
 
     public override string ToString()
     {
-        return $"Cinema - {Naam} ({BerekenPrijs():F2} euro)";
+        return $"Cinema - {Naam}";
     }
 }

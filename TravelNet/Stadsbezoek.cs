@@ -24,7 +24,7 @@ public class Stadsbezoek : IActiviteit
 
     public override string ToString()
     {
-        return $"Stadsbezoek - {Naam} ({BerekenPrijs():F2} euro)";
+        return $"Stadsbezoek - {Naam}";
     }
 
 }
